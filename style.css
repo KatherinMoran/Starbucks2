@@ -1,0 +1,437 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    height: 90px;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #000;
+    margin: 0 1rem;
+}
+
+.navbar-toggler {
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-brand img {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 110px;
+    height: 50px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 115px;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: -130px;
+}
+
+.d-flex img {
+    height: 22px;
+    margin-right: 5px;
+    margin-bottom: -5px;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    height: 6px;
+    display: block;
+    bottom: -24px;
+    left: 0;
+    background: green;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    background: green;
+}
+
+.navbar a:hover {
+    color: green;
+    transition: none;
+}
+
+.d-flex a:hover {
+    color: #474545;
+}
+
+.first-container {
+    display: flex;
+    margin-right: 50px;
+    margin-left: 50px;
+    background-color: #9f88c1;
+}
+
+.first-text,
+.first-image {
+    flex: 1;
+}
+
+.first-image img {
+    width: 100%;
+}
+
+.first-text {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.first-text h1 {
+    font-size: 50px;
+}
+
+.first-text p {
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.first-h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.second-container {
+    display: flex;
+    margin-right: 50px;
+    margin-left: 50px;
+    background-color: rgb(212, 233, 226)
+}
+
+.second-text,
+.second-image {
+    flex: 1;
+}
+
+.second-image img {
+    width: 100%;
+}
+
+.second-text {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(5, 112, 76);
+}
+
+.second-text h1 {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.second-text p {
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.postular {
+    display: block;
+    margin: 0 auto;
+    background-color: transparent;
+    color: rgb(5, 112, 76);
+    border-radius: 20px;
+    width: 130px;
+    font-size: 17px;
+    font-weight: bold;
+    border: 1px solid rgb(5, 112, 76);
+}
+
+.prefooter {
+    background-color: #fff;
+    padding: 50px 0;
+    box-shadow: 0 -3px 3px rgba(0, 0, 0, 0.1);
+    height: 485px;
+}
+
+.prefooter h4 {
+    font-size: 20px;
+    color: black;
+    margin-left: 40px;
+}
+
+.prefooter li {
+    font-weight: normal;
+    color: gray;
+    margin-left: 40px;
+    font-size: 17px;
+}
+
+.prefooter-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 110px;
+}
+
+.prefooter-container img {
+    height: 90px;
+    margin-left: 380px;
+}
+
+.prefooter-column {
+    flex: 1;
+    max-width: 200px;
+}
+
+.prefooter-column h4 {
+    margin-bottom: 20px;
+}
+
+.prefooter-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.prefooter-column ul li {
+    margin-bottom: 20px;
+}
+
+.prefooter ul li:hover {
+    color: #000;
+    cursor: pointer;
+}
+
+.footer {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #e0e0e0;
+    height: 206px;
+}
+
+.social-networks {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.social-networks li {
+    display: inline;
+    margin: 0 7px;
+}
+
+.social-networks li img {
+    width: 45px;
+    margin-bottom: 20px;
+}
+
+.social-networks img:hover {
+    transform: translateY(-2px);
+}
+
+.menu-legal {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu-legal li {
+    color: #acaaaa;
+}
+
+.menu-legal a {
+    color: #acaaaa;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.menu-legal a:hover {
+    color: #888;
+}
+
+.copyright {
+    color: #acaaaa;
+    font-size: 14px;
+    font-weight: normal;
+    display: block;
+    margin-top: 20px;
+}
+
+.build-id {
+    color: #acaaaa;
+    font-size: 10px;
+    font-weight: normal;
+    display: block;
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        height: 70px;
+        width: 100%;
+        background-color: #fff;
+    }
+
+    .navbar-brand img {
+        left: 80px;
+        height: 42px;
+        margin-top: -35px;
+    }
+
+    .navbar.fixed {
+        position: fixed;
+        top: 0;
+        z-index: 1020;
+    }
+    
+    .navbar-collapse.fixed {
+        top: 70px;
+    }
+
+    .nav-link::after,
+    .nav-link:hover::after {
+        content: none;
+    }
+
+    .navbar a {
+        display: flex;
+        align-items: center;
+        position: relative;
+        left: -110px;
+        margin-top: 33px;
+        font-size: 14px;
+    }
+
+    .d-flex {
+        display: flex;
+        align-items: center;
+        position: relative;
+        left: 116px;
+        border-top: 1px solid rgb(238, 235, 235);
+
+    }
+
+    .navbar-collapse {
+        position: fixed;
+        transition: none;
+        background-color: #fff;
+        height: 100vh;
+        left: 60px;
+        top: 70px;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .first-container {
+        display: block;
+        margin: 0;
+    }
+
+    .first-text {
+        height: 265px;
+    }
+
+    .first-text h1 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .second-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        height: 630px;
+    }
+
+    .second-image {
+        order: 1;
+    }
+
+    .second-text {
+        order: 2;
+    }
+
+    .second-text h1 {
+        font-size: 30px;
+    }
+
+    .prefooter-container {
+        flex-direction: column;
+        margin-left: 0;
+        height: auto;        
+    }
+
+    .prefooter-column {
+        max-width: none;
+        margin-bottom: 10px;
+    }
+
+    .prefooter-column ul{
+        display: block; 
+    }
+
+    .prefooter-column.active ul{
+        display: block;
+    } 
+
+    .prefooter-column h4::after {
+        content: url(images/arrow-down.svg);
+        position: absolute;
+        right: 10px;
+    } 
+
+    .prefooter-container img {
+        position: relative;
+        right: 340px;
+        width: 65px;
+        height: 90px;
+        margin-top: 10px;
+    } 
+
+    .footer {
+        padding: 20px 0;
+        height: auto;
+        clear: both;
+        position: relative;
+        z-index: 1;
+        top: 600px;
+    }
+
+    .menu-legal{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    } 
+    
+}
+/*falta que el prefooter se reajuste cuando se cierra la flecha, yo no pude hacerlo*/
+
+@media (min-width: 577px) and (max-width: 768px) {
+/*falta hacer*/
+}
+
+@media (min-width: 769px) and (max-width: 990px) {
+  /*falta hacer*/
+}
