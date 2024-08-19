@@ -64,16 +64,22 @@ body {
     display: block;
     bottom: -24px;
     left: 0;
-    background: green;
+    /*background: green;*/
+    background-color: #006848;
+   
+   
 }
 
 .nav-link:hover::after {
     width: 100%;
-    background: green;
+    /*background: green;*/ 
+   background-color: #006848;
+   
 }
 
 .navbar a:hover {
-    color: green;
+    /*color: green;*/ 
+   color: #006848;
     transition: none;
 }
 
@@ -233,21 +239,27 @@ body {
     list-style-type: none;
     padding: 0;
     margin-bottom: 15px;
+    
 }
 
 .social-networks li {
     display: inline;
     margin: 0 7px;
+   
 }
 
 .social-networks li img {
     width: 45px;
     margin-bottom: 20px;
+   
 }
 
 .social-networks img:hover {
     transform: translateY(-2px);
+  
 }
+
+
 
 .menu-legal {
     list-style-type: none;
@@ -256,6 +268,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 20px;
+   
 }
 
 .menu-legal li {
@@ -435,3 +448,8 @@ body {
 @media (min-width: 769px) and (max-width: 990px) {
   /*falta hacer*/
 }
+
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/ 
+
+
+
