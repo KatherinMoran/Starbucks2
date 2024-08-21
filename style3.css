@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,900;1,14..32,900&display=swap');
+
+
+
+.titulo {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    background-color: rgb(31, 57, 50);
+    color: rgb(254, 255, 254);
+    height: 275px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 55px;
+    margin: 0;  
+    padding-top: 1.5%;
+    margin-left: -25%;
+}
+
+.parrafo1 {
+    font-size: 21.7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto 0 auto; 
+    width: 707px;
+    transform: translateX(-10px); 
+    letter-spacing: 0.2px;
+    color: rgb(74, 74, 74);
+}
+
+
+#NuestroCafé {
+    margin-left: 20px; 
+    height: auto; 
+    margin-top: 20px;
+    width: 730px;
+}
+
+
+.parrafo2{
+    font-size: 21.7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto 0 auto; 
+    width: 707px;
+    transform: translateX(-10px); 
+    letter-spacing: 0.2px;
+    color: rgb(74, 74, 74);
+}
+
+.parrafo3{
+    font-size: 21.7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 22px auto 0 auto; 
+    width: 707px;
+    transform: translateX(-10px); 
+    letter-spacing: 0.2px;
+    color: rgb(74, 74, 74);
+}
+
+
+.titulo2{
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: -20%;
+    margin-top: 2%;
+    margin-bottom: 2.5%;
+}
+
+.parrafo4{
+    width: 707px;
+    font-size: 21.7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 22px auto 0 auto; 
+    transform: translateX(-10px); 
+    letter-spacing: 0.2px;
+    color: rgb(74, 74, 74);
+}
+
+
+.Titulo3{
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: -42%;
+    margin-top: 2%;
+    margin-bottom: 2.5%;
+}
+
+
+.parrafo5{
+    width: 707px;
+    font-size: 21.7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 22px auto 0 auto; 
+    transform: translateX(-10px); 
+    letter-spacing: 0.2px;
+    color: rgb(74, 74, 74);
+}
+
+
+h5{
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 26%;
+    width: 700px;
+    margin-top: 2%;
+    margin-bottom: 2.5%;
+    letter-spacing: 2px;
+    font-size: 30px;
+}
+
+
+#sirviendo{
+    margin-left: 20px; 
+    height: auto; 
+    margin-top: 20px;
+    width: 730px;
+}
+
+
+@media (max-width: 768px) {
+    .titulo {
+        height: 130px;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 40px;
+        margin-right: 0;  
+        padding-top: 0;
+
+    }
+
+    .parrafo1, .parrafo2, .parrafo3, .parrafo4, .parrafo5 {
+        width: 90%;
+        margin: 20px auto;
+        transform: translateX(0); 
+        font-size: 18px;
+        letter-spacing: 1.5px;
+    }
+
+    #NuestroCafé, #sirviendo, #Tostado {
+        width: 100%;
+        margin-left: 0; 
+    }
+
+    .titulo2, .Titulo3 {
+        text-align: left;
+    }
+
+    h3{
+        margin-right: 22%;
+    }
+
+.Titulo4 {
+        margin-left: 30px;
+        width: 400px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    h5 {
+        margin-left: 0;
+        width: 100%;
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    h5 {
+        font-size: 20px;
+    }
+
+    .parrafo1, .parrafo2, .parrafo3, .parrafo4, .parrafo5 {
+        font-size: 16px;
+    }
+    .titulo2, .Titulo3, .Titulo4 {
+        margin-right: -10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+}
