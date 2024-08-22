@@ -64,22 +64,16 @@ body {
     display: block;
     bottom: -24px;
     left: 0;
-    /*background: green;*/
     background-color: #006848;
-   
-   
 }
 
 .nav-link:hover::after {
     width: 100%;
-    /*background: green;*/ 
-   background-color: #006848;
-   
+    background-color: #006848;
 }
 
 .navbar a:hover {
-    /*color: green;*/ 
-   color: #006848;
+    color: #006848;
     transition: none;
 }
 
@@ -233,46 +227,39 @@ body {
     padding: 20px 0;
     border-top: 1px solid #e0e0e0;
     height: 206px;
+    margin-top: 50px;
 }
 
 .social-networks {
     list-style-type: none;
     padding: 0;
     margin-bottom: 15px;
-    
 }
 
 .social-networks li {
     display: inline;
     margin: 0 7px;
-   
 }
 
 .social-networks li img {
     width: 45px;
     margin-bottom: 20px;
-   
 }
 
 .social-networks img:hover {
     transform: translateY(-2px);
-  
 }
-
-
 
 .menu-legal {
     list-style-type: none;
-    padding: 0;
     margin-bottom: 10px;
     display: flex;
     justify-content: center;
-    gap: 20px;
-   
 }
 
 .menu-legal li {
     color: #acaaaa;
+    margin-right: -20px;
 }
 
 .menu-legal a {
@@ -318,7 +305,7 @@ body {
         top: 0;
         z-index: 1020;
     }
-    
+
     .navbar-collapse.fixed {
         top: 70px;
     }
@@ -393,7 +380,7 @@ body {
     .prefooter-container {
         flex-direction: column;
         margin-left: 0;
-        height: auto;        
+
     }
 
     .prefooter-column {
@@ -401,19 +388,23 @@ body {
         margin-bottom: 10px;
     }
 
-    .prefooter-column ul{
-        display: block; 
+    .prefooter-column ul {
+        display: block;
     }
 
-    .prefooter-column.active ul{
+    /* .prefooter-column ul {
+        display: none;
+    }*/
+
+    .prefooter-column.active ul {
         display: block;
-    } 
+    }
 
     .prefooter-column h4::after {
         content: url(images/arrow-down.svg);
         position: absolute;
         right: 10px;
-    } 
+    }
 
     .prefooter-container img {
         position: relative;
@@ -421,35 +412,398 @@ body {
         width: 65px;
         height: 90px;
         margin-top: 10px;
-    } 
-
-    .footer {
-        padding: 20px 0;
-        height: auto;
-        clear: both;
-        position: relative;
-        z-index: 1;
-        top: 600px;
+        margin-bottom: 30px;
     }
 
-    .menu-legal{
+    .menu-legal {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-    } 
-    
+    }
+
 }
-/*falta que el prefooter se reajuste cuando se cierra la flecha, yo no pude hacerlo*/
 
 @media (min-width: 577px) and (max-width: 768px) {
-/*falta hacer*/
+    .navbar {
+        height: 70px;
+        width: 100%;
+        background-color: #fff;
+    }
+
+    .navbar-brand img {
+        left: 86px;
+        height: 42px;
+        margin-top: -40px;
+        height: 40px;
+    }
+
+    .navbar-toggler {
+        position: relative;
+        left: 10px;
+        top: -6px;
+
+    }
+
+    .navbar-toggler img {
+        height: 15px;
+        position: relative;
+        right: 2px;
+    }
+
+    .navbar.fixed {
+        position: fixed;
+        top: 0;
+        z-index: 1020;
+    }
+
+    .navbar-collapse.fixed {
+        top: 70px;
+    }
+
+    .nav-link::after,
+    .nav-link:hover::after {
+        content: none;
+    }
+
+    .navbar a {
+        display: flex;
+        align-items: center;
+        position: relative;
+        left: -110px;
+        margin-top: 33px;
+        font-size: 14px;
+    }
+
+    .d-flex {
+        display: flex;
+        align-items: center;
+        position: relative;
+        left: 116px;
+        border-top: 1px solid rgb(238, 235, 235);
+
+    }
+
+    .navbar-collapse {
+        position: fixed;
+        transition: none;
+        background-color: #fff;
+        height: 100vh;
+        left: 60px;
+        top: 70px;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .first-container {
+        display: block;
+        margin: 0;
+    }
+
+    .first-image {
+        content: url(./images/banner-lavanda768px.png);
+        width: 100%;
+    }
+
+    .first-text h1 {
+        font-size: 35px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        font-weight: bold;
+    }
+
+    .first-text p {
+        margin-bottom: 70px;
+    }
+
+    .first-h1 {
+        text-align: center;
+    }
+
+    .first-h1 span {
+        display: inline;
+    }
+
+    .first-h1 span:nth-child(1)::after {
+        content: " TU MOMENTO JUNTO";
+    }
+
+    .first-h1 span:nth-child(2) {
+        display: none;
+    }
+
+    .first-h1 span:nth-child(3) {
+        display: block;
+    }
+
+    .second-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        height: 800px;
+    }
+
+    .second-image {
+        order: 1;
+    }
+
+    .second-text {
+        order: 2;
+    }
+
+    .second-text h1 {
+        font-size: 37px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        font-weight: bold;
+        display: inline;
+    }
+
+    .second-text h1:nth-child(1)::after {
+        content: " grande";
+    }
+
+    .second-text h1:nth-child(2) {
+        display: none;
+    }
+
+    .second-text p {
+        margin-bottom: 70px;
+    }
+
+    .prefooter-container {
+        flex-direction: column;
+        margin-left: 0;
+
+    }
+
+    .prefooter-column {
+        max-width: none;
+        margin-bottom: 10px;
+    }
+
+    .prefooter-column ul {
+        display: block;
+    }
+
+    /* .prefooter-column ul {
+        display: none;
+    }*/
+
+    .prefooter-column.active ul {
+        display: block;
+    }
+
+    .prefooter-column h4::after {
+        content: url(images/arrow-down.svg);
+        position: absolute;
+        right: 10px;
+    }
+
+    .prefooter-container img {
+        position: relative;
+        right: 340px;
+        width: 65px;
+        height: 90px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    .menu-legal {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
 }
 
 @media (min-width: 769px) and (max-width: 990px) {
-  /*falta hacer*/
+
+    .navbar {
+        height: 70px;
+        width: 100%;
+        background-color: #fff;
+    }
+
+    .navbar-brand img {
+        left: 86px;
+        height: 42px;
+        margin-top: -40px;
+        height: 40px;
+    }
+
+    .navbar-toggler {
+        position: relative;
+        left: 10px;
+        top: -6px;
+    }
+
+    .navbar-toggler img {
+        height: 15px;
+        position: relative;
+        right: 2px;
+    }
+
+    .navbar.fixed {
+        position: fixed;
+        top: 0;
+        z-index: 1020;
+    }
+
+    .navbar-collapse.fixed {
+        top: 70px;
+    }
+
+    .nav-link::after,
+    .nav-link:hover::after {
+        content: none;
+    }
+
+    .navbar a {
+        display: flex;
+        align-items: center;
+        position: relative;
+        left: -110px;
+        margin-top: 33px;
+        font-size: 14px;
+    }
+
+    .d-flex {
+        display: flex;
+        align-items: center;
+        position: relative;
+        left: 116px;
+        border-top: 1px solid rgb(238, 235, 235);
+    }
+
+    .navbar-collapse {
+        position: fixed;
+        transition: none;
+        background-color: #fff;
+        height: 100vh;
+        left: 60px;
+        top: 70px;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .first-container {
+        display: block;
+        margin: 0;
+    }
+
+    .first-image {
+        content: url(./images/banner-lavanda768px.png);
+        width: 100%;
+    }
+
+    .first-text h1 {
+        font-size: 35px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        font-weight: bold;
+    }
+
+    .first-text p {
+        margin-bottom: 70px;
+    }
+
+    .first-h1 {
+        text-align: center;
+    }
+
+    .first-h1 span {
+        display: inline;
+    }
+
+    .first-h1 span:nth-child(1)::after {
+        content: " TU MOMENTO JUNTO";
+    }
+
+    .first-h1 span:nth-child(2) {
+        display: none;
+    }
+
+    .first-h1 span:nth-child(3) {
+        display: block;
+    }
+
+    .second-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        height: 800px;
+    }
+
+    .second-image {
+        order: 1;
+    }
+
+    .second-text {
+        order: 2;
+    }
+
+    .second-text h1 {
+        font-size: 37px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        font-weight: bold;
+        display: inline;
+    }
+
+    .second-text h1:nth-child(1)::after {
+        content: " grande";
+    }
+
+    .second-text h1:nth-child(2) {
+        display: none;
+    }
+
+    .second-text p {
+        margin-bottom: 70px;
+    }
+
+    .prefooter-container {
+        flex-direction: column;
+        margin-left: 0;
+
+    }
+
+    .prefooter-column {
+        max-width: none;
+        margin-bottom: 10px;
+    }
+
+    .prefooter-column ul {
+        display: block;
+    }
+
+    /* .prefooter-column ul {
+        display: none;
+    }*/
+
+    .prefooter-column.active ul {
+        display: block;
+    }
+
+    .prefooter-column h4::after {
+        content: url(images/arrow-down.svg);
+        position: absolute;
+        right: 10px;
+    }
+
+    .prefooter-container img {
+        position: relative;
+        right: 340px;
+        width: 65px;
+        height: 90px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    .menu-legal {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
 }
-
-/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/ 
-
-
-
