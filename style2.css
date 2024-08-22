@@ -1,6 +1,5 @@
-/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 h1, h2, h3 {
@@ -22,60 +21,32 @@ h1, h2, h3 {
     margin-bottom: 1.5rem;
 }
 
-
-/* Titles */
 h1 {
-    font-size: 2rem;
-    font-weight: 400;  /* Grosor reducido para "¡Disfrútalos!" */
+    font-size: 20px;
+    font-weight: bold;
 }
 
-h2.subtitle {
-    font-size: 1.5rem;
-    font-weight: 1000;  /* Grosor aumentado para el subtítulo */
-}
-
-/* Section Headers */
-.display-4 {
-    font-size: 2.5rem;
-    font-weight: 700;
-}
-
-h2.display-4 {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
+.container h2{
+    font-weight: bold;
 }
 
 h3 {
     font-size: 1.25rem;
-    font-weight: 500;
+    font-weight: bold;
 }
 
-/* Image Styles */
-.img-fluid {
-    max-width: 100%;
-    height: auto;
-}
-
-.rounded-circle {
-    border-radius: 50%;
-}
-
-/* Bebidas Section */
 .bebidas img {
     margin-bottom: 1rem;
 }
 
-/* Comidas Section */
 .comidas img {
     margin-bottom: 1rem;
 }
 
-/* En Casa Section */
 .en-casa img {
     margin-bottom: 1rem;
 }
 
-/* Additional Styles for Sections */
 .bebidas, .comidas, .en-casa {
     padding: 2rem 0;
 }
@@ -84,19 +55,18 @@ h3 {
     margin-bottom: 1.5rem;
 }
 
-/* Line Container Styles */
 .line-container {
-    text-align: left;      /* Centra el texto y las líneas */
-    margin-bottom: 2rem;     /* Ajusta el margen inferior si es necesario */
-    width: 100%;             /* Asegura que ocupe todo el ancho del contenedor */
+    text-align: left;      
+    margin-bottom: 2rem;    
+    width: 100%;             
 }
 
 .line {
     height: 1px;
     background-color: #949191;
     display: block;
-    width: 100%;             /* Las líneas ocuparán todo el ancho del contenedor */
-    margin: 0.5rem 0;        /* Espacio entre las líneas y el texto */
+    width: 100%;            
+    margin: 0.5rem 0;        
 }
 
 .line-container span {
@@ -104,61 +74,44 @@ h3 {
     font-weight: bold;
     color: #333;
     display: block;
-    margin: 0.5rem 0;        /* Ajusta el margen superior e inferior del texto */
+    margin: 0.5rem 0;     
 }
 
-/* Image Styles */
-.img-fluid {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Circles and Background Color for Images */
 .image-container {
-    display: inline-block; /* Para que las imágenes se alineen correctamente */
-    background-color: #f0f0f0; /* Color de fondo del contenedor */
-    border-radius: 50%; /* Hace el contenedor redondo */
-    overflow: hidden; /* Oculta las partes de la imagen que sobresalen del contenedor */
-    width: 200px; /* Ajusta el tamaño del contenedor según sea necesario */
-    height: 200px; /* Ajusta el tamaño del contenedor según sea necesario */
+    display: inline-block; 
+    background-color: rgb(24, 57, 45);
+    border-radius: 50%;
+    width: 160px; 
+    height: 160px; 
     position: relative; /* Necesario para efectos de hover */
-    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
-    text-align: center; /* Asegura que el contenido dentro esté centrado */
+    text-align: center; 
+    padding: 10px;
+    border: 10px solid transparent;
 }
 
 .image-container img {
     width: 100%;
-    height: 100%; /* Hace que la imagen llene todo el contenedor */
-    object-fit: cover; /* Asegura que la imagen mantenga su aspecto dentro del círculo */
+    height: 100%;
+    object-fit: cover;
     display: block;
-    transition: transform 0.3s ease;
 }
 
-.image-container:hover {
-    background-color: #e0e0e0; /* Cambia el color de fondo al pasar el cursor */
+.image-container:hover{
+   
+    border: 10px solid rgb(202, 240, 230);
 }
 
-.image-container:hover img {
-    transform: scale(1.1); /* Aumenta la imagen al pasar el cursor sobre ella */
-}
-
-/* Bebidas Section */
 .bebidas .col-md-4 .image-container img {
     margin-bottom: 1rem;
 }
 
-/* Comidas Section */
 .comidas .col-md-4 .image-container img {
     margin-bottom: 1rem;
 }
 
-/* En Casa Section */
 .en-casa .col-md-6 .image-container img {
     margin-bottom: 1rem;
 }
-
-
-
 
 
 /* Optional: Responsive Design */
@@ -167,4 +120,4 @@ h3 {
         flex: 0 0 100%;
         max-width: 100%;
     }
-}
+} 
