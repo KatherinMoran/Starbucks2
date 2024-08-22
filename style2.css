@@ -1,0 +1,170 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1, h2, h3 {
+    color: #333;
+    
+}
+
+.text-left {
+    text-align: left;
+}
+
+.my-5 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.my-4 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+
+/* Titles */
+h1 {
+    font-size: 2rem;
+    font-weight: 400;  /* Grosor reducido para "¡Disfrútalos!" */
+}
+
+h2.subtitle {
+    font-size: 1.5rem;
+    font-weight: 1000;  /* Grosor aumentado para el subtítulo */
+}
+
+/* Section Headers */
+.display-4 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2.display-4 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+/* Image Styles */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.rounded-circle {
+    border-radius: 50%;
+}
+
+/* Bebidas Section */
+.bebidas img {
+    margin-bottom: 1rem;
+}
+
+/* Comidas Section */
+.comidas img {
+    margin-bottom: 1rem;
+}
+
+/* En Casa Section */
+.en-casa img {
+    margin-bottom: 1rem;
+}
+
+/* Additional Styles for Sections */
+.bebidas, .comidas, .en-casa {
+    padding: 2rem 0;
+}
+
+.bebidas .col-md-4, .comidas .col-md-4, .en-casa .col-md-6 {
+    margin-bottom: 1.5rem;
+}
+
+/* Line Container Styles */
+.line-container {
+    text-align: left;      /* Centra el texto y las líneas */
+    margin-bottom: 2rem;     /* Ajusta el margen inferior si es necesario */
+    width: 100%;             /* Asegura que ocupe todo el ancho del contenedor */
+}
+
+.line {
+    height: 1px;
+    background-color: #949191;
+    display: block;
+    width: 100%;             /* Las líneas ocuparán todo el ancho del contenedor */
+    margin: 0.5rem 0;        /* Espacio entre las líneas y el texto */
+}
+
+.line-container span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin: 0.5rem 0;        /* Ajusta el margen superior e inferior del texto */
+}
+
+/* Image Styles */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Circles and Background Color for Images */
+.image-container {
+    display: inline-block; /* Para que las imágenes se alineen correctamente */
+    background-color: #f0f0f0; /* Color de fondo del contenedor */
+    border-radius: 50%; /* Hace el contenedor redondo */
+    overflow: hidden; /* Oculta las partes de la imagen que sobresalen del contenedor */
+    width: 200px; /* Ajusta el tamaño del contenedor según sea necesario */
+    height: 200px; /* Ajusta el tamaño del contenedor según sea necesario */
+    position: relative; /* Necesario para efectos de hover */
+    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+    text-align: center; /* Asegura que el contenido dentro esté centrado */
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%; /* Hace que la imagen llene todo el contenedor */
+    object-fit: cover; /* Asegura que la imagen mantenga su aspecto dentro del círculo */
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.image-container:hover {
+    background-color: #e0e0e0; /* Cambia el color de fondo al pasar el cursor */
+}
+
+.image-container:hover img {
+    transform: scale(1.1); /* Aumenta la imagen al pasar el cursor sobre ella */
+}
+
+/* Bebidas Section */
+.bebidas .col-md-4 .image-container img {
+    margin-bottom: 1rem;
+}
+
+/* Comidas Section */
+.comidas .col-md-4 .image-container img {
+    margin-bottom: 1rem;
+}
+
+/* En Casa Section */
+.en-casa .col-md-6 .image-container img {
+    margin-bottom: 1rem;
+}
+
+
+
+
+
+/* Optional: Responsive Design */
+@media (max-width: 768px) {
+    .col-md-4, .col-md-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
