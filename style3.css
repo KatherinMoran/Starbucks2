@@ -186,8 +186,12 @@ h5{
         margin-left: 0; 
     }
 
-    .titulo2, .Titulo3 {
+    .titulo2 {
         text-align: left;
+    }
+
+    .Titulo3{
+        margin-left: 5%;
     }
 
     h3{
