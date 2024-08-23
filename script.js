@@ -1,11 +1,27 @@
 function cambiarImagen() {
     let imagen = document.getElementById('menuHam');
+    let overlay = document.getElementById('overlay');
+    let navbarCollapse = document.getElementById('navbarSupportedContent');
+
     if (imagen.src.includes('menu.svg')) {
         imagen.src = './images/close.svg';
+        overlay.style.display = 'block';
     } else {
         imagen.src = './images/menu.svg';
+        overlay.style.display = 'none';
+    }
+
+    if (navbarCollapse.classList.contains('show')) {
+        overlay.style.display = 'none';
     }
 }
+
+document.getElementById('overlay').addEventListener('click', function() {
+    document.getElementById('overlay').style.display = 'none';
+    document.getElementById('navbarSupportedContent').classList.remove('show');
+    document.getElementById('menuHam').src = './images/menu.svg';
+});
+
 
 document.addEventListener('DOMContentLoaded', function () {
     var navbar = document.querySelector('.navbar');
