@@ -1,0 +1,156 @@
+.titulo {
+    background-color: rgb(31, 57, 50);
+    color: white;
+    width: 100%;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo h1 {
+    font-weight: bold;
+    font-size: 55px;
+}
+
+.subtitulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 45px;
+    color: rgb(31, 57, 50);
+}
+
+.experiencia {
+    margin-top: -20px;
+}
+
+.primer-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.primer-contenedor img {
+    width: 600px;
+}
+
+.primer-contenedor h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.primer-contenedor p {
+    text-align: center;
+    font-size: 22px;
+    margin: 15px 20px;
+}
+
+.texto1 {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    padding: 30px;
+    background-color: rgb(238, 236, 232);
+    width: 600px;
+    height: 350px;
+}
+
+.h1-2 {
+    margin-top: 50px;
+}
+
+button {
+    border-radius: 20px;
+    border: 1px solid black;
+    font-size: 20px;
+    padding: 4px 15px;
+    background-color: transparent;
+}
+
+@media (max-width: 768px) {
+    .titulo h1 {
+        font-size: 40px;
+    }
+
+    .subtitulo {
+        font-size: 24px;
+    }
+
+    .primer-contenedor {
+        flex-direction: column;
+    }
+
+    .primer-contenedor img{
+        order: 1;
+    }
+
+    .texto1{
+        order: 2;
+    }
+
+    .primer-contenedor img,
+    .texto1 {
+        width: 100%;
+    }
+
+    .primer-contenedor h1 {
+        font-size: 28px;
+    }
+
+    .primer-contenedor p {
+        font-size: 20px;
+    }
+
+    .prefooter-column ul {
+        display: none;
+    }
+
+    @media (max-width: 576px) {
+        .titulo {
+            height: 125px;
+        }
+
+        .titulo h1 {
+            font-size: 32px;
+        }
+
+        .subtitulo {
+            font-size: 22px;
+            margin-top: 40px;
+        }
+
+        .primer-contenedor img {
+            width: 100%;
+        }
+
+        .primer-contenedor h1 {
+            font-size: 24px;
+        }
+
+        .primer-contenedor p {
+            font-size: 18px;
+        }
+
+        .texto1 {
+            padding: 20px;
+            height: auto;
+        }
+
+        button {
+            font-size: 18px;
+            padding: 6px 12px;
+        }
+    }
+    .prefooter-column ul {
+        display: none;
+    }
+}
